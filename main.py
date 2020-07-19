@@ -88,7 +88,7 @@ def resume(file):
 
 def Whatsapp(contact, message, media, answer):
     driver = webdriver.Chrome(
-        "C:\\Users\\Lenovo\\Downloads\\chromedriver_win32\\chromedriver.exe")
+        "C:\\selenium driver\\geckodriver.exe")
     driver.get("https://web.whatsapp.com")
     time.sleep(5)
     driver.find_element_by_css_selector(
@@ -109,7 +109,7 @@ def Whatsapp(contact, message, media, answer):
 
 def Youtube(search):
     driver = webdriver.Chrome(
-        "C:\\Users\\Lenovo\\Downloads\\chromedriver_win32\\chromedriver.exe")
+        "C:\\selenium driver\\geckodriver.exe")
     driver.get("https://www.youtube.com")
     driver.find_element_by_xpath("//input[@id='search']").send_keys(search)
     driver.find_element_by_xpath(
@@ -120,7 +120,7 @@ def Youtube(search):
 
 def Google(search):
     driver = webdriver.Chrome(
-        "C:\\Users\\Lenovo\\Downloads\\chromedriver_win32\\chromedriver.exe")
+        "C:\\selenium driver\\geckodriver.exe")
     driver.get("https://www.google.com")
     time.sleep(3)
     driver.find_element_by_xpath("//input[@name='q']").send_keys(search)
